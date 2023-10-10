@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora Cientifica</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="main">
+        <header class="header">
+            <h1>Calculadora</h1>
+        </header>
+        <section class="section">
+            <div class="display-box">
+                <p id="display"></p>
+            </div>
+            <div class="button-box">
+                <button class="simbol-button" onclick="calcLog10()">Log10</button>
+                <button class="simbol-button" onclick="calcLog2()">log2</button>
+                <button class="simbol-button" onclick="calcLogBaseNatural()">Log(e)</button>
+                <button class="simbol-button"  onclick="inserirValor('/')">/</button> <br />
+                <button class="number-button" onclick="inserirValor('1')">1</button>
+                <button class="number-button" onclick="inserirValor('2')">2</button>
+                <button class="number-button" onclick="inserirValor('3')">3</button>
+                <button class="simbol-button" onclick="inserirValor('*')">x</button><br />
+                <button class="number-button" onclick="inserirValor('4')">4</button>
+                <button class="number-button" onclick="inserirValor('5')">5</button>
+                <button class="number-button" onclick="inserirValor('6')">6</button>
+                <button class="simbol-button" onclick="inserirValor('-')">-</button><br />
+                <button class="number-button" onclick="inserirValor('7')">7</button>
+                <button class="number-button" onclick="inserirValor('8')">8</button>
+                <button class="number-button" onclick="inserirValor('9')">9</button>
+                <button class="simbol-button" onclick="inserirValor('+')">+</button><br />
+                <button class="number-button" onclick="inserirValor('0')">0</button>
+                <button class="simbol-button" onclick="inserirValor('.')">.</button>
+                <button class="simbol-button" onclick="calcular()">=</button>
+                <button class="simbol-button" onclick="clean()">Clear</button>
+            </div>
+        </section>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
