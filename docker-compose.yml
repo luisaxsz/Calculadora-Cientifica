@@ -1,0 +1,11 @@
+version: '3'
+services:
+  front:
+    image: nginx:latest
+    container_name: calculadora
+    volumes:
+      - "./index.html:/usr/share/nginx/html/index.html"
+      - "./style.css:/usr/share/nginx/html/style.css"
+      - "./script.js:/usr/share/nginx/html/script.js"
+    ports:
+      - "8080:80"
